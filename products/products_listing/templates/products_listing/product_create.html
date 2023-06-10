@@ -1,0 +1,13 @@
+{% extends 'products_listing/base.html' %}
+
+{% block content %}
+  <div class="container mt-3">
+    <h1>Create Product</h1>
+    <form method="POST">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">Save</button>
+    </form>
+    
+  </div>
+{% endblock %}

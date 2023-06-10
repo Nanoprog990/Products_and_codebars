@@ -1,0 +1,20 @@
+{% extends 'products_listing/base.html' %}
+
+{% block title %}My Products{% endblock %}
+
+{% block content %}
+    <h1>My Products</h1>
+    {% if products %}
+        <ul>
+        {% for product in products %}
+            <li>
+                {{ product.name }}
+                <a href="{% url 'edit_product' product.pk %}">Edit</a>
+                <a href="{% url 'delete_product' product.pk %}">Delete</a>
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No products added yet.</p>
+    {% endif %}
+{% endblock %}

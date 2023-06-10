@@ -1,0 +1,124 @@
+/* Body Styles */
+body {
+    background-color: #F2E8CF;
+    color: #4A4A4A;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #FF6B35;
+    color: #FFFFFF;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  
+  /* Navigation Styles */
+  nav {
+    background-color: #F2E8CF;
+    border: 1px solid #FF6B35;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: right;
+  }
+  
+  nav a {
+    margin-right: 20px;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #4A4A4A;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  nav a:hover {
+    color: #FF6B35;
+  }
+  
+  /* Form Styles */
+  form {
+    border: 1px solid #FF6B35;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"], input[type="email"], input[type="password"] {
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    padding: 5px;
+    width: 100%;
+  }
+  
+  input[type="submit"] {
+    background-color: #FF6B35;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #E85A28;
+  }
+  
+  /* Table Styles */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: transparent;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #F2E8CF;
+  }
+  
+  tr:hover {
+    background-color: #FF6B35;
+    color: #FFFFFF;
+  }
+  
+  

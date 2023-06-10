@@ -1,0 +1,9 @@
+{% extends 'products_listing/base.html' %}
+
+{% block content %}
+  <h1>{{ product.name }}</h1>
+  <p><h3>Description:</h3> {{ product.description }}</p>
+  <p><h3>EAN13:</h3> {{ product.ean13 }}</p>
+  <p><h3>DUN14:</h3> {{ product.dun14 }}</p>
+  <p><h3>Units per container:</h3> {{ product.units_number }}</p>
+{% endblock %}

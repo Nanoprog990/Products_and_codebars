@@ -1,0 +1,36 @@
+{% extends 'products_listing/base.html' %}
+
+{% block content %}
+  <h1>Welcome to your Product manager.</h1>
+
+  {% if products %}
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Description</th>
+              <th>EAN13</th>
+              <th>DUN14</th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+            <tbody>
+        {% for product in products %}
+            <tr>
+                <td><a href="{% url 'product_detail' pk=product.pk %}">{{ product.name }}</a></td>
+                <td>{{ product.description }}</td>
+                <td>{{ product.ean13 }}</td>
+                <td>{{ product.dun14 }}</td>
+                <td><a href="{% url 'edit_product' product.pk %}">Edit</a></td>
+                <td><a href="{% url 'delete_product' product.pk %}">Delete</a></td>
+            </tr>
+        {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No products added yet.</p>
+    {% endif %}
+  
+  <a href="{% url 'product_create' %}">Add a Product</a>
+{% endblock %}
